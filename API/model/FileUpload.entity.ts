@@ -34,8 +34,10 @@ export class FileUploader
 FileUploader.init(
   {
     id: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       autoIncrement: true,
+      allowNull: false,
+      autoIncrementIdentity: true,
       primaryKey: true,
     },
     name: {

@@ -5,7 +5,7 @@ export const FileUploader = sequelizeConn.define(
   "files",
   {
     id: {
-      type: DataTypes.INTEGER.UNSIGNED,
+      type: DataTypes.INTEGER,
       autoIncrement: true,
       allowNull: false,
       primaryKey: true,
